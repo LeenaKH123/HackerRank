@@ -9,3 +9,5 @@ if __name__ == '__main__':
         student_marks[name] = scores # here we are passing the name as a key and scores as a value
     query_name = input()# take the query name from the user to find the average marks for that particular user
     marks = student_marks[query_name] #save the marks for a particular student
+   # format (value, '.nf')  #format the output to a particular number of decimcal places
+    print(format(sum(marks)/3, '.2f'))
