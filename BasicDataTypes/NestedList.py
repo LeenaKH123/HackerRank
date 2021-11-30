@@ -10,6 +10,15 @@ for i in range(n):
 grade = sorted(set(grade))  # convert the list into a set to have all the unique elements and remove all duplicates, then apply sorted function on the set then store it in the same variable grade,
 m=grade[1] # this will give us the second lowest element
 name = [] # a list to save the names of the students with the second lowest marks
+for val in result: 
+    if m == val[1]:
+        name.append(val[0])   # val is the list within the bigger result list, val[1] is the marks value, and the for loop is to iterate over all the elements in the bigger list
+name.sort() # sort the names in ascending order
+for nm in name:
+    print(nm)
+
+    
+
 
 
 
